@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- the title element sets the tab names
+        whatever is put inside the title will be displayed on the tab bar-->
+        <title>
+            HTML CSS Review
+        </title>
+
+        <!--THis is where the CSS will be located in this example-->
+        <!-- Note that the style tags are note css
+        CSS is done inside them to change appearances of elements and edit them to your liking
+        Note that we change all buttons backgrounds to red and the words inside white-->
+        <style>
+
+            .red-button {
+                background-color: red;
+                color: white;
+                border: none;
+            }
+
+            .yellow-button {
+                background-color: yellow;
+                color: black;
+                border: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <!--The below creates a button and is named hello on the website
+
+    The below is also an example of an element
+    To create an element you must add the 2 arrows and the name of element in the middle
+    as seen below
+    The below button has a title which is a tool tip
+    so if you hover over the button it will display whatever is in the double quotes that title is equal to
+
+        Note that the above was previously just button so it changed all buttons
+        to the style we selected, now we have only changing the buttons with the class attribute
+
+    We then added a class attribute where any button that has the class red-button
+    will get the CSS attributes from above-->
+        <button title="tool tip" class="red-button"
+                onclick="
+                    alert('good job')
+                    //above allows us to write JS code inside the quotes on onclick event
+                    //this can be done with other events as well">
+            hello
+        </button>
+        <!--The below creates a paragraph in the website
+        whatever is inside the Ps will be displayed in a paragraph
+        in the website
+        You can also create an element inside other elements as seen below-->
+        <p>
+            paragraph of
+            <button class="yellow-button">sheesh</button>
+            text
+        </p>
+    <!--Note that new lines in HTML code does not correlate to the website it will be read as one space-->
+
+    <!-- Note that the below is the script element that adds JS into the website-->
+        <script>
+            alert('hello');
+            //console.log displays the content inside the parenthesis to the console of the website
+            console.log(2+2);
+        </script>
+
+    </body>
+
+
+
+</html>
